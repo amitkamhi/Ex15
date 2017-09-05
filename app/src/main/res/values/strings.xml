@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Ex15</string>
+    <string name="app">This application demonstrates the use of Content Providers by quering the 'contacts' and the 'Galery' providers</string>
+    <string name="new_image">Get a new image</string>
+    <string name="contact_details">Get contact details</string>
+    <string name="first_name">First Name:</string>
+    <string name="lastName">Last Name:</string>
+    <string name="phone">Phone:</string>
+    <string name="adress">Address:</string>
+
+
+</resources>
