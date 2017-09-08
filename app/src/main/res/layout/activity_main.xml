@@ -14,7 +14,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentTop="true"
+        android:id="@+id/textView" />
 
     <Button
         android:text="@string/new_image"
@@ -22,7 +23,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="88dp"
         android:id="@+id/newImage"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="getNewImage"/>
 
     <Button
         android:text="@string/contact_details"
@@ -31,16 +33,6 @@
         android:id="@+id/contactDetails"
         android:layout_marginTop="96dp"
         android:layout_below="@+id/newImage"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:text="@string/first_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="60dp"
-        android:id="@+id/firstName"
-        android:layout_alignTop="@+id/contactDetails"
         android:layout_alignParentStart="true" />
 
     <TextView
@@ -67,29 +59,11 @@
         android:id="@+id/fillLastName" />
 
     <TextView
-        android:text="@string/phone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView11"
-        android:layout_alignStart="@+id/textView11"
-        android:layout_marginTop="23dp"
-        android:id="@+id/phone" />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/phone"
         android:layout_toEndOf="@+id/fillLastName"
         android:id="@+id/fillPhone" />
-
-    <TextView
-        android:text="@string/adress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/phone"
-        android:layout_alignStart="@+id/phone"
-        android:layout_marginTop="19dp"
-        android:id="@+id/textView15" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -98,12 +72,40 @@
         android:layout_alignStart="@+id/fillPhone"
         android:id="@+id/fillAdress" />
 
+    <TextView
+        android:text="@string/first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/firstName"
+        android:layout_below="@+id/contactDetails"
+        android:layout_alignEnd="@+id/contactImage"
+        android:layout_marginEnd="45dp" />
+
+    <TextView
+        android:text="@string/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/phone"
+        android:layout_below="@+id/textView11"
+        android:layout_alignEnd="@+id/textView11" />
+
+    <TextView
+        android:text="@string/adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/phone"
+        android:layout_alignEnd="@+id/firstName" />
+
     <ImageView
         android:src="@mipmap/place_holder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/image"
-        android:layout_above="@+id/firstName"
-        android:layout_toEndOf="@+id/newImage" />
+        android:id="@+id/contactImage"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
