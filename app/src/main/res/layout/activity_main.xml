@@ -17,31 +17,6 @@
         android:layout_alignParentTop="true"
         android:id="@+id/textView" />
 
-    <Button
-        android:text="@string/new_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
-        android:id="@+id/newImage"
-        android:layout_alignParentStart="true"
-        android:onClick="getNewImage"/>
-
-    <Button
-        android:text="@string/contact_details"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/contactDetails"
-        android:layout_marginTop="96dp"
-        android:layout_below="@+id/newImage"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/firstName"
-        android:layout_toEndOf="@+id/contactDetails"
-        android:id="@+id/fillFirstName" />
-
     <TextView
         android:text="@string/lastName"
         android:layout_width="wrap_content"
@@ -52,35 +27,18 @@
         android:id="@+id/textView11" />
 
     <TextView
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView11"
         android:layout_alignStart="@+id/fillFirstName"
-        android:id="@+id/fillLastName" />
+        android:id="@+id/fillLastName"
+        android:layout_width="250dp" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/phone"
-        android:layout_toEndOf="@+id/fillLastName"
-        android:id="@+id/fillPhone" />
-
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/textView15"
         android:layout_alignStart="@+id/fillPhone"
         android:id="@+id/fillAdress" />
-
-    <TextView
-        android:text="@string/first_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
-        android:id="@+id/firstName"
-        android:layout_below="@+id/contactDetails"
-        android:layout_alignEnd="@+id/contactImage"
-        android:layout_marginEnd="45dp" />
 
     <TextView
         android:text="@string/phone"
@@ -100,12 +58,54 @@
         android:layout_below="@+id/phone"
         android:layout_alignEnd="@+id/firstName" />
 
+    <Button
+        android:text="@string/new_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/newImage"
+        android:onClick="getNewImage"
+        android:layout_alignTop="@+id/contactImage"
+        android:layout_alignParentEnd="true" />
+
     <ImageView
         android:src="@mipmap/place_holder"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/contactImage"
+        android:layout_marginTop="17dp"
+        android:layout_height="150dp"
         android:layout_below="@+id/textView"
+        android:layout_toStartOf="@+id/contactDetails" />
+
+    <Button
+        android:text="@string/contact_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactDetails"
+        android:layout_centerVertical="true"
         android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/fillFirstName"
+        android:layout_width="250dp"
+        android:layout_below="@+id/contactDetails"
+        android:layout_marginTop="21dp" />
+
+    <TextView
+        android:text="@string/first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstName"
+        android:layout_marginEnd="22dp"
+        android:layout_alignBaseline="@+id/fillFirstName"
+        android:layout_alignBottom="@+id/fillFirstName"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/fillPhone"
+        android:layout_above="@+id/textView15"
+        android:layout_alignStart="@+id/contactImage" />
 
 </RelativeLayout>
